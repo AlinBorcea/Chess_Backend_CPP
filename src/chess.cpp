@@ -108,6 +108,7 @@ void Block::take_block(Block& other) {
     this->piece.name = other.piece.name;
     this->piece.camp = other.piece.camp;
     this->piece.symbol = other.piece.symbol;
+    this->piece.move_style_index = other.piece.move_style_index;
 }
 
 std::istream& operator>>(std::istream& in, Block& block) {
